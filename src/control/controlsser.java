@@ -1,6 +1,8 @@
 package control;
 import javax.swing.JOptionPane;
 import java.util.ArrayList;
+import java.util.List;
+
 import model.knoife.knoife;
 public class controlsser
 {// that weird stuff is java dock
@@ -18,10 +20,29 @@ public class controlsser
     {
     	//loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooop();
         //loopy();
-    	askUser();
-    	System.out.println("fug");
+    	lists();
+    	//knoifeyInGreatQuantity();
+    	//////askUser();
+    	
     }
-    
+    public void lists() {
+    	   List<String> fug = new ArrayList();
+    	   fug.add("fug");
+    	   fug.add("fug");
+    	   fug.add("fug");
+    	   fug.add("fug");
+    	   fug.add("ebin");
+    	   fug.add("ebin");
+    	   fug.add("fug");
+    	   for ( int fugg = fug.size()-1  ;  fugg > 0; fugg  --)// stuff that you put into a loop or if then like current cant be seen outside the loop
+       	{//this is a for each loop so for (each thing on a list) 
+       		if (fug.get(fugg) == "ebin") {
+       			fug.remove(fugg);
+       		}
+       		System.out.println(fug.get(fugg));
+       	}
+    	 
+    }
    public boolean validDouble (String response){
 	boolean isvalid = false;
 	try 
@@ -108,19 +129,23 @@ public class controlsser
     	myknoife.add(sampleKnoife);
     	myknoife.add(otherknoife);
     	//standered forward loop
+    	// it will skip stuff
     	for (int fug = 0; fug < myknoife.size(); fug += 1)
     	{
-    		knoife currentKnoife = myknoife.get(fug);
-    		currentKnoife.setKnoifeLength(fug * currentKnoife.getKnoifeLength());
+    		// Good for display, or minor changes
+    		JOptionPane.showMessageDialog(null, myknoife.get(fug).getKnoifeLength());
+    		
+    		
     	}
     	//standered backward loop
+    	//actually cool
     	for (int index = myknoife.size() - 1; index >= 0; index -= 1)
     	{
     		
     	}
     	for (knoife current : myknoife)// stuff that you put into a loop or if then like current cant be seen outside the loop
     	{//this is a for each loop so for (each thing on a list) 
-    		JOptionPane.showMessageDialog(null, "the knoife is named: " + current.getIfSwitchBlade());
+    		JOptionPane.showMessageDialog(null, "this blade is a switch: " + current.getIfSwitchBlade());
     	}
     	
     }
