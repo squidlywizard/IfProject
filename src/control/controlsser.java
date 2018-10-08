@@ -19,7 +19,7 @@ public class controlsser
     	//loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooop();
         //loopy();
     	askUser();
-    	
+    	System.out.println("fug");
     }
     
    public boolean validDouble (String response){
