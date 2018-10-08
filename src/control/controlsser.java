@@ -34,12 +34,15 @@ public class controlsser
     	   fug.add("ebin");
     	   fug.add("ebin");
     	   fug.add("fug");
-    	   for ( int fugg = fug.size()-1  ;  fugg > 0; fugg  --)// stuff that you put into a loop or if then like current cant be seen outside the loop
+    	   for ( int fugg = fug.size() -1 ;  fugg > -1; fugg  --)// stuff that you put into a loop or if then like current cant be seen outside the loop
        	{//this is a for each loop so for (each thing on a list) 
        		if (fug.get(fugg) == "ebin") {
        			fug.remove(fugg);
+       			
+       		} else {
+       			System.out.println(fugg);
        		}
-       		System.out.println(fug.get(fugg));
+       		
        	}
     	 
     }
