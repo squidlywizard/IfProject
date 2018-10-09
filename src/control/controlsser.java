@@ -26,7 +26,7 @@ public class controlsser
     	
     }
     public void lists() {
-    	   List<String> fug = new ArrayList();
+    	   List<String> fug = new ArrayList<>();
     	   fug.add("fug");
     	   fug.add("fug");
     	   fug.add("fug");
