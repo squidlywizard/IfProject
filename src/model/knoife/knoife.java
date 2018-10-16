@@ -71,11 +71,12 @@ public class knoife
 	{
 		this.knoifeLength = length;
 	}
-	public String toString(String fug)
+	public Boolean toString(String fug)
 	{
-		String thynLegality = ("it is " + getKnoifeLength() );
-		System.out.println(thynLegality);
-		return thynLegality;
+		boolean thynLegality = false ;
+		
+				
+				return thynLegality;
 		
 	}
 	

@@ -22,7 +22,7 @@ public class controlsser
         //loopy();
     	lists();
     	//knoifeyInGreatQuantity();
-    	//////askUser();
+    	askUser();
     	
     }
     public void lists() {
@@ -40,7 +40,7 @@ public class controlsser
        			fug.remove(fugg);
        			
        		} else {
-       			System.out.println(fugg);
+       			System.out.println(fug.get(fugg));
        		}
        		
        	}
@@ -89,7 +89,12 @@ public class controlsser
 		   }
 	 }
    }
- 
+ /**
+  *below brings up a pop up that says "this is the song that doesnt end it just goes on and on my friend some people started singing it not knowing what it was and people will keep singing it forever just because"
+  *5 times
+  *than brings up a pop up that says?kidding
+  *and lastly brings a pop up that says"The loop value is:" in a addition to the number starting at 9000 that will be minused by 2 till it reaches a value smaller than 30
+  */
     private void loopy()
 
     {
@@ -122,8 +127,12 @@ public class controlsser
     	}
     	
     }
+    /**
+     * this creates a list with the objects, sampleKnoife (twice) and an otherKnoife
+     * and then prints out if the knoife is a switch blade equal to the number of items in the list
+     */
     private void knoifeyInGreatQuantity()
-    {//dont forhet that local variables are only visible to those they were made in
+    {//dont forget that local variables are only visible to those they were made in
     	// they only have scope to its method
     	ArrayList<knoife> myknoife = new ArrayList<knoife>();
     	knoife sampleKnoife = new knoife();
@@ -152,6 +161,10 @@ public class controlsser
     	}
     	
     }
+    /**
+     * this one asks you questions about a theroetical knoife with pop ups
+     */
+   
     public void askUser()
     {
     	String response = JOptionPane.showInputDialog("What is the length");
